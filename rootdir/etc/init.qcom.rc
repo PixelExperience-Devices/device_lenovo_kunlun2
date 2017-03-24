@@ -47,6 +47,12 @@ on init
     mount none /system/etc/init/android.hardware.light@2.0-service.rc  /vendor/etc/init/android.hardware.light@2.0-service.rc  bind
     mount none /vendor/lost+found /vendor/overlay bind
 
+    # set default schedTune value for foreground/top-app
+    # Set default values for foreground and top-app stune
+    write /dev/stune/foreground/schedtune.prefer_idle 1
+    write /dev/stune/top-app/schedtune.boost 10
+    write /dev/stune/top-app/schedtune.prefer_idle 1
+
 on late-fs
     # Runtime fs tuning
     write /sys/block/sda/queue/iostats 0
