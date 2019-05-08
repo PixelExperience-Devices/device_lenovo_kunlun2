@@ -73,6 +73,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
    vendor.bluetooth.soc=cherokee \
    ro.vendor.fm.use_audio_session=true
 
+# Graphics
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.sf.latch_unsignaled=1
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0
