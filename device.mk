@@ -61,7 +61,8 @@ PRODUCT_BOOT_JARS += \
     qcom.fmradio
 
 PRODUCT_PRODUCT_PROPERTIES += \
-   vendor.bluetooth.soc=cherokee
+   vendor.bluetooth.soc=cherokee \
+   ro.vendor.fm.use_audio_session=true
 
 # HIDL
 PRODUCT_PACKAGES += \
