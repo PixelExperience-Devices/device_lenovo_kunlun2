@@ -85,7 +85,6 @@ product/etc/permissions/telephonyservice.xml
 product/framework/QtiTelephonyServicelibrary.jar
 product/framework/embmslibrary.jar
 product/framework/qcrilhook.jar
-product/framework/qti-telephony-common.jar|6cc6ab4ab2cbd333a113ffe3add8d8793aec3c1d
 
 # Radio - IMS
 product/lib64/libdiag_system.so
@@ -98,6 +97,9 @@ product/lib64/lib-imsvtutils.so
 product/lib64/vendor.qti.imsrtpservice@2.0.so
 product/lib64/vendor.qti.imsrtpservice@2.1.so
 -product/priv-app/ims/ims.apk|70d0bdc659e3e85d4e817d9c6f293225cbcab820
+
+# Telephony (qti-telephony-common) - from DRG - QKQ1.190828.002
+product/framework/qti-telephony-common.jar|b4d187700f279cdbd40e74b4c3be4504f10d8b29
 
 # WiFi Display
 bin/wfdservice
