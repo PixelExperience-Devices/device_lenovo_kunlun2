@@ -58,7 +58,7 @@ BOARD_HAS_QCA_FM_SOC := "cherokee"
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
+TARGET_TAP_TO_WAKE_NODE := "/sys/class/touch/tp_dev/gesture_on"
 TARGET_USES_INTERACTION_BOOST := true
 
 # Partitions
