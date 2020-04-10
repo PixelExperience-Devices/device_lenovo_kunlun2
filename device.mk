@@ -4,7 +4,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/realme/sdm710-common/sdm710-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/lenovo/kunlun2/kunlun2-vendor.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -42,7 +42,7 @@ PRODUCT_PACKAGES += \
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
-    RealmeParts
+    LenovoParts
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -87,7 +87,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.realme_sdm710
+    android.hardware.light@2.0-service.lenovo_kunlun2
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -140,7 +140,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.realme_sdm710
+    android.hardware.usb@1.0-service.lenovo_kunlun2
 
 # WiFi
 PRODUCT_COPY_FILES += \
