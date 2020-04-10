@@ -28,11 +28,7 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_SOURCE := kernel/lenovo/kunlun2
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := sdm670-perf_defconfig
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/arm64-gcc/bin
-KERNEL_TOOLCHAIN_PREFIX := aarch64-elf-
+TARGET_PREBUILT_KERNEL := device/lenovo/kunlun2/prebuilt/Image.gz-dtb
 
 # Audio
 USE_CUSTOM_AUDIO_POLICY := 1
