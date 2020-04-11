@@ -6,9 +6,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/lenovo/kunlun2/kunlun2-vendor.mk)
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
 
