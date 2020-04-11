@@ -63,6 +63,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     qcom.fmradio
 
+PRODUCT_PRODUCT_PROPERTIES += \
+   vendor.bluetooth.soc=cherokee
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0
@@ -90,6 +93,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
 
+# Pixel identification
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.build.fingerprint=google/flame/flame:10/QQ2A.200405.005/6254899:user/release-keys
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service-qti
@@ -105,9 +112,6 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# System properties
--include $(LOCAL_PATH)/product_prop.mk
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -141,6 +145,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    debug.sf.enable_hwc_vds=1 \
 
 # Wallpapers
 PRODUCT_PACKAGES += \
