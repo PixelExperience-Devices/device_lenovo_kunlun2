@@ -44,7 +44,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
-    media.settings.xml=/system/etc/media_profiles_vendor.xml
+    media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 
 # Netflix
 PRODUCT_PRODUCT_PROPERTIES += \

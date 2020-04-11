@@ -28,10 +28,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-pe
 PRODUCT_PACKAGES += \
     audio.a2dp.default
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK_VERSION)/etc/audio_policy_configuration.xml
-
 # Camera
 PRODUCT_PACKAGES += \
     Snap
@@ -85,10 +81,6 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.lenovo_kunlun2
-
-# Media
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
 
 # Net
 PRODUCT_PACKAGES += \
