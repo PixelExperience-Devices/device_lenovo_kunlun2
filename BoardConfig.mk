@@ -61,9 +61,6 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 BOARD_HAVE_QCOM_FM := true
 BOARD_HAS_QCA_FM_SOC := "cherokee"
 
-# HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
-
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/class/touch/tp_dev/gesture_on"
 TARGET_USES_INTERACTION_BOOST := true
