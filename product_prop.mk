@@ -1,3 +1,7 @@
+# Charger
+PRODUCT_PRODUCT_PROPERTIES += \
+   ro.charger.enable_suspend=true
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
    ro.sf.lcd_density=480
