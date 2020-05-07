@@ -102,7 +102,7 @@ PRODUCT_COPY_FILES += \
 
 # Pixel identification
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.build.fingerprint=google/flame/flame:10/QQ2A.200405.005/6254899:user/release-keys
+    ro.build.fingerprint=google/flame/flame:10/QQ2A.200501.001.A3/6353761:user/release-keys
 
 # Power
 PRODUCT_PACKAGES += \
