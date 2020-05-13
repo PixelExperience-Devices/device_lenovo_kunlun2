@@ -100,10 +100,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.build.fingerprint=google/flame/flame:10/QQ2A.200501.001.A3/6353761:user/release-keys
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service-qti
-
 # QTI Performance
 PRODUCT_BOOT_JARS += \
     QPerformance \
