@@ -103,14 +103,16 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.lenovo-libperfmgr
+    android.hardware.power@1.3-service.lenovo-libperfmgr \
+    android.hardware.power.stats@1.0-service.lenovo
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:system/etc/powerhint.json
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/google/pixel
 
 # Telephony
 PRODUCT_PACKAGES += \
