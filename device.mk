@@ -147,7 +147,9 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.enable_hwc_vds=1 \
+    persist.vendor.radio.atfwd.start=false
 
 # Wallpapers
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
+
