@@ -69,14 +69,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     qcom.fmradio
 
-PRODUCT_PRODUCT_PROPERTIES += \
-   vendor.bluetooth.soc=cherokee \
-   ro.vendor.fm.use_audio_session=true
-
-# Graphics
-PRODUCT_PRODUCT_PROPERTIES += \
-    debug.sf.latch_unsignaled=1
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0
@@ -101,16 +93,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
 
-PRODUCT_PRODUCT_PROPERTIES += \
-    media.settings.xml=/system/etc/media_profiles_vendor.xml
-
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
-
-# Pixel identification
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.build.fingerprint=google/flame/flame:10/QQ2A.200501.001.A3/6353761:user/release-keys
 
 # Power
 PRODUCT_PACKAGES += \
@@ -125,6 +110,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/pixel
 
+# System properties
+-include $(LOCAL_PATH)/product_prop.mk
+
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
@@ -137,11 +125,6 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml
-
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.dbg.volte_avail_ovr=1 \
-    persist.dbg.vt_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1
 
 # USB
 PRODUCT_PACKAGES += \
@@ -157,10 +140,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-PRODUCT_PRODUCT_PROPERTIES += \
-    debug.sf.enable_hwc_vds=1 \
-    persist.vendor.radio.atfwd.start=false
 
 # Wallpapers
 PRODUCT_PACKAGES += \
