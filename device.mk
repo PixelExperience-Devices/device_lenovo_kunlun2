@@ -106,6 +106,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-google-p.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/privapp-permissions-google-p.xml
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.lenovo-libperfmgr \
