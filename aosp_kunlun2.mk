@@ -16,7 +16,10 @@
 
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Pixel Experience targets
 TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
