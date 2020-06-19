@@ -93,8 +93,10 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.lenovo_kunlun2
 
 # Livedisplay
+ifeq ($(findstring Plus, $(CUSTOM_VERSION)),)
 PRODUCT_PACKAGES += \
     lineage.livedisplay@2.0-service-sdm
+endif
     
 # Media
 PRODUCT_COPY_FILES += \
