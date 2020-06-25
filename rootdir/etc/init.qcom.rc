@@ -113,6 +113,7 @@ service charger /system/bin/charger
     class charger
     user system
     group system graphics input
+    capabilities SYS_BOOT
     seclabel u:r:charger:s0
 
 service cvphalservice /system/bin/true
