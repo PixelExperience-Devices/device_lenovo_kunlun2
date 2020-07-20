@@ -109,6 +109,11 @@ service vendor.light-hal-2-0 /vendor/bin/hw/android.hardware.light@2.0-service
     # shutting off lights while powering-off
     shutdown critical
 
+service charger /system/bin/charger
+    class charger
+    user system
+    group system graphics input
+    seclabel u:r:charger:s0
 
 service cvphalservice /system/bin/true
     disabled
