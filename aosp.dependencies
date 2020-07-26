@@ -12,9 +12,9 @@
     "branch":      "ten"
   },
   {
-    "remote": "gitlab",
-    "repository": "PixelExperience/vendor_lenovo_kunlun2",
-    "target_path": "vendor/lenovo",
+    "remote": "pixel-devices-bitbucket",
+    "repository": "vendor_lenovo_kunlun2",
+    "target_path": "vendor/lenovo/kunlun2",
     "branch": "ten"
   }
 ]
