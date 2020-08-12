@@ -10,6 +10,9 @@ $(call inherit-product-if-exists, vendor/lenovo/kunlun2/kunlun2-vendor.mk)
 # Inherit from sdm710-common
 $(call inherit-product, device/lenovo/sdm710-common/sdm710.mk)
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
