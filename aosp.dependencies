@@ -12,7 +12,7 @@
     "branch":      "ten"
   },
   {
-    "remote": "pixel-devices-bitbucket",
+    "remote": "pixel-devices-blobs",
     "repository": "vendor_lenovo_kunlun2",
     "target_path": "vendor/lenovo/kunlun2",
     "branch": "ten"
