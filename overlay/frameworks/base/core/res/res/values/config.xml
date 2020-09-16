@@ -14,7 +14,7 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-	
+
     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
@@ -52,7 +52,7 @@
         <item>2748</item>
         <item>3100</item>
     </integer-array>
-	
+
     <!-- Array of desired screen brightness in nits corresponding to the lux values
          in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
          config_screenBrightnessMaximumNits, the display brightness is defined as the measured
@@ -195,7 +195,7 @@
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
      <fraction name="config_autoBrightnessAdjustmentMaxGamma">300.0%</fraction>
-	
+
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
 
@@ -229,7 +229,7 @@
          bluetooth interfaces.  If the device doesn't want to support tethering over bluetooth this
          should be empty. -->
     <string-array translatable="false" name="config_tether_bluetooth_regexs">
-        <item>"bnep\\d"</item>							  
+        <item>"bnep\\d"</item>
         <item>"bt-pan"</item>
     </string-array>
 
@@ -361,7 +361,7 @@
         <item>gprs:4092,8760,11680,4096,8760,11680</item>
         <item>evdo:4094,87380,524288,4096,16384,262144</item>
     </string-array>
-	
+
     <!-- Wifi driver supports batched scan -->
     <bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
 
@@ -385,7 +385,7 @@
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
          provisioning, availability etc -->
     <bool name="config_carrier_wfc_ims_available">true</bool>
-	
+
     <!-- ImsService package name to bind to by default, if config_dynamic_bind_ims is true -->
     <string name="config_ims_package">org.codeaurora.ims</string>
 
@@ -412,12 +412,12 @@
     <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
 
     <!-- Flag indicating if the speed up audio on mt call code should be executed -->
-    <bool name="config_speed_up_audio_on_mt_calls">true</bool>			
-	
+    <bool name="config_speed_up_audio_on_mt_calls">true</bool>
+
     <!-- Operating volatage for bluetooth controller. 0 by default-->
     <integer name="config_bluetooth_operating_voltage_mv">3300</integer>
-	
-    <!-- Vibrator pattern for feedback about a long screen/key press -->	
+
+    <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
         <item>1</item>
@@ -425,19 +425,19 @@
         <item>35</item>
     </integer-array>
 
-    <!-- Vibrator pattern for feedback about touching a virtual key -->	
+    <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
         <item>10</item>
         <item>20</item>
         <item>35</item>
     </integer-array>
-	
+
     <!-- Vibrator pattern for a very short but reliable vibration for soft keyboard tap -->
     <integer-array name="config_keyboardTapVibePattern">
         <item>40</item>
     </integer-array>
-	
+
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
         <item>"/system/framework/arm64/boot-framework.oat"</item>
@@ -473,7 +473,7 @@
         <item>"/system/priv-app/SystemUI/SystemUI.apk"</item>
         <item>"/system/lib64/libsurfaceflinger.so"</item>
     </string-array>
-	
+
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
     <bool name="config_setColorTransformAccelerated">true</bool>
@@ -484,14 +484,14 @@
          or a single SIM device can have 1 phones/logical modems, but 2 physical slots (one eSIM
          and one pSIM) -->
     <integer name="config_num_physical_slots">2</integer>
-	
+
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
 
     <!-- True if the firmware supports connected MAC randomization -->
     <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
-	
+
     <!-- ComponentName of a dream to show whenever the system would otherwise have
          gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
          try to start this dream if possible.  The dream should typically call startDozing()
@@ -562,7 +562,7 @@
          specified -->
     <string name="default_wallpaper_component" translatable="false">com.breel.wallpapers19/com.breel.wallpapers19.doodle.wallpaper.variations.DoodleWallpaperV1</string>
 
-    <!-- The list of components which should be automatically disabled for a specific package. --> 
+    <!-- The list of components which should be automatically disabled for a specific package. -->
     <string-array name="config_disabledComponents" translatable="false">
 	<item>com.google.android.googlequicksearchbox/com.google.android.hotword.service.HotwordService</item>
     </string-array>
@@ -571,4 +571,7 @@
          it causes the device to wake up.
          The default is false. -->
     <bool name="config_lidControlsSleep">true</bool>
+
+    <!-- Workaround to trim baseband version's string of some devices with duplicated baseband string -->
+    <bool name="config_trim_baseband_version_string">true</bool>
 </resources>
