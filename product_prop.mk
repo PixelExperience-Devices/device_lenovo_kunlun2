@@ -1,3 +1,7 @@
+# Display
+PRODUCT_PROPERTY_OVERRIDES += \
+   ro.sf.lcd_density=480
+
 # FM
 PRODUCT_PRODUCT_PROPERTIES += \
    vendor.bluetooth.soc=cherokee \
