@@ -76,9 +76,6 @@ PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio
 
-PRODUCT_BOOT_JARS += \
-    qcom.fmradio
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
