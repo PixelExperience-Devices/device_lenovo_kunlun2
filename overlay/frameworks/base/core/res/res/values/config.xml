@@ -326,12 +326,6 @@
     -->
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
 
-    <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
-    <bool translatable="false" name="config_wifi_dual_band_support">true</bool>
-
-    <!-- Boolean indicating whether the wifi chipset has background scan support -->
-    <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
-
     <!-- Enable ACS (auto channel selection) for Wifi hotspot (SAP) -->
     <bool translatable="false" name="config_wifi_softap_acs_supported">true</bool>
 
@@ -361,13 +355,6 @@
         <item>gprs:4092,8760,11680,4096,8760,11680</item>
         <item>evdo:4094,87380,524288,4096,16384,262144</item>
     </string-array>
-
-    <!-- Wifi driver supports batched scan -->
-    <bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
-
-    <!-- Configure wifi tcp buffersizes in the form:
-         rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
-    <string name="config_wifi_tcp_buffers">524288,1048576,4525824,524288,1048576,4525824</string>
 
     <!-- Flag specifying whether VoLTE is available on device -->
     <bool name="config_device_volte_available">true</bool>
@@ -470,9 +457,6 @@
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
-
-    <!-- True if the firmware supports connected MAC randomization -->
-    <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
 
     <!-- ComponentName of a dream to show whenever the system would otherwise have
          gone to sleep.  When the PowerManager is asked to go to sleep, it will instead
