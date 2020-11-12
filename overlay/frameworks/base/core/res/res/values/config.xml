@@ -540,4 +540,12 @@
 
     <!-- Workaround to trim baseband version's string of some devices with duplicated baseband string -->
     <bool name="config_trim_baseband_version_string">true</bool>
+
+    <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
+         when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
+         where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
+         and Strength as defined in Authenticators.java -->
+    <string-array name="config_biometric_sensors" translatable="false" >
+        <item>0:2:15</item> <!-- ID0:Fingerprint:Strong -->
+    </string-array>
 </resources>
