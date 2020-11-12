@@ -17,6 +17,7 @@
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
+REVENGEOS_BUILDTYPE := OFFICIAL
 
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/revengeos/config/common.mk)
