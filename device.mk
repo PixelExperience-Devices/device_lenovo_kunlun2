@@ -47,7 +47,6 @@ PRODUCT_COPY_FILES += \
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.qcom.rc \
-    init.safailnet.rc \
     init.power.rc
 
 # Device-specific settings
@@ -114,10 +113,6 @@ PRODUCT_COPY_FILES += \
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
-
-# Permissions
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-google-p.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/privapp-permissions-google-p.xml
 
 # Power
 PRODUCT_PACKAGES += \

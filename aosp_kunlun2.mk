@@ -16,14 +16,14 @@
 
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Pixel Experience targets
 TARGET_BOOT_ANIMATION_RES := 1080
-REVENGEOS_BUILDTYPE := OFFICIAL
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/revengeos/config/common.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := revengeos_kunlun2
+PRODUCT_NAME := aosp_kunlun2
 PRODUCT_BRAND := lenovo
 PRODUCT_DEVICE := kunlun2
 PRODUCT_MANUFACTURER := lenovo

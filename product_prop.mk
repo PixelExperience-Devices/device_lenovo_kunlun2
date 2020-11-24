@@ -21,10 +21,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     media.settings.xml=/system/etc/media_profiles_vendor.xml
 
-# Pixel identification
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.build.fingerprint=google/coral/coral:11/RP1A.201105.002/6869500:user/release-keys
-
 # Telephony
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.dbg.volte_avail_ovr=1 \
