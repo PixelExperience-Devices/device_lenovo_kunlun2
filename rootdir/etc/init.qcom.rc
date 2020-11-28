@@ -42,6 +42,7 @@ on init
     write /proc/sys/vm/page-cluster 0
 
     mount none /system/etc/audio_policy_configuration.xml /vendor/etc/audio_policy_configuration.xml bind
+    mount none /vendor/lost+found /vendor/overlay bind
 
 on late-fs
     # Runtime fs tuning
