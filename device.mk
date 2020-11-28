@@ -53,11 +53,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LenovoParts
 
-# Dex preopt
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI \
-    NexusLauncherRelease
-
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \
