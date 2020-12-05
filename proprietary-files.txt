@@ -51,9 +51,6 @@ product/lib64/vendor.qti.imsrtpservice@2.1.so
 # Radio - IMS - from davinci - QKQ1.190825.002 - https://gist.github.com/BoredOutOfMyGit/616950625c0f49f8b9ab9a9d237430f5
 -product/priv-app/ims/ims.apk|70d0bdc659e3e85d4e817d9c6f293225cbcab820
 
-# Telephony (qti-telephony-common) - from cmi - MIUI 12 Android 11
-system_ext/framework/qti-telephony-common.jar|98951c48563c5846a58c9a3c4c254f32d0741f36
-
 # WiFi Display
 bin/wfdservice
 etc/init/wfdservice.rc
