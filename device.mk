@@ -38,7 +38,6 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap \
     Gcam
 
 PRODUCT_COPY_FILES += \
