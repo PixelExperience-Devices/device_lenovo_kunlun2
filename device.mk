@@ -52,10 +52,6 @@ PRODUCT_PACKAGES += \
     init.qcom.rc \
     init.power.rc
 
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    LenovoParts
-
 # Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \
