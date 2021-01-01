@@ -472,9 +472,6 @@
          The default is false. -->
     <bool name="config_lidControlsSleep">true</bool>
 
-    <!-- Workaround to trim baseband version's string of some devices with duplicated baseband string -->
-    <bool name="config_trim_baseband_version_string">true</bool>
-
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
          where: IDs are unique per device, Modality as defined in BiometricAuthenticator.java,
