@@ -79,6 +79,9 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     libhidltransport
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vendor_override_manifest.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/vendor_override_manifest.xml
+
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common \

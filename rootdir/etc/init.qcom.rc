@@ -46,6 +46,7 @@ on init
     mount none /system/etc/wifi/WCNSS_qcom_cfg.ini  /vendor/etc/wifi/WCNSS_qcom_cfg.ini  bind
     mount none /system/etc/init/android.hardware.light@2.0-service.rc  /vendor/etc/init/android.hardware.light@2.0-service.rc  bind
     mount none /vendor/lost+found /vendor/overlay bind
+    mount none /system/etc/vendor_override_manifest.xml /vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml bind
 
     # set default schedTune value for foreground/top-app
     # Set default values for foreground and top-app stune
