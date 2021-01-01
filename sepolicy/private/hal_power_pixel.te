@@ -20,7 +20,6 @@ allow hal_power_pixel sysfs_graphics:file r_file_perms;
 
 allow hal_power_pixel sysfs_rpm:file r_file_perms;
 allow hal_power_pixel sysfs_system_sleep_stats:file r_file_perms;
-allow hal_power_pixel sysfs_power_stats:file r_file_perms;
 
 r_dir_file(hal_power, sysfs_tp)
 allow hal_power_pixel sysfs_tp:file write;
