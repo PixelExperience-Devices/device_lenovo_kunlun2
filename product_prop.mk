@@ -41,7 +41,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.early.app.duration=16500000 \
     debug.sf.earlyGl.sf.duration=13500000 \
     debug.sf.earlyGl.app.duration=21000000 \
-    ro.surface_flinger.max_frame_buffer_acquired_buffers=3    
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 
 # Media
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -49,9 +49,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Telephony
 PRODUCT_PRODUCT_PROPERTIES += \
+    ro.telephony.default_network=22,20 \
     persist.dbg.volte_avail_ovr=1 \
     persist.dbg.vt_avail_ovr=1 \
-    persist.dbg.wfc_avail_ovr=1   
+    persist.dbg.wfc_avail_ovr=1
 
 # WiFi Display
 PRODUCT_PRODUCT_PROPERTIES += \
