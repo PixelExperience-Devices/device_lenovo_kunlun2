@@ -90,5 +90,6 @@ vendor/etc/sensors/config/sdm710_mn58xxx_0.json
 vendor/etc/sensors/config/sdm710_stk3x3x_kunlun2_0.json
 vendor/etc/sensors/config/stk3x3x_kunlun2_0.json
 
-# WiFi firmware
+# WiFi
+vendor/bin/cnss-daemon
 vendor/firmware/bdwlan_kunlun2.bin
