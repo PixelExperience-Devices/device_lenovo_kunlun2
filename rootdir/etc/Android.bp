@@ -1,6 +1,0 @@
-prebuilt_etc {
-    name: "init.lenovo.rc",
-    src: "init.lenovo.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
