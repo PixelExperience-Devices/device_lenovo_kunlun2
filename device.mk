@@ -6,6 +6,7 @@
 
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/lenovo/kunlun2/kunlun2-vendor.mk)
+$(call inherit-product-if-exists, vendor/lenovo-firmware/kunlun2/firmware.mk)
 
 # Inherit from sdm710-common
 $(call inherit-product, device/lenovo/sdm710-common/sdm710.mk)
