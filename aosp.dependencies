@@ -5,13 +5,9 @@
       "branch": "eleven"
    },
    {
-      "repository":  "kernel_lenovo_kunlun2",
-      "target_path": "kernel/lenovo/kunlun2",
-      "branch": "eleven"
-   },
-   {
+      "remote": "pixel-devices-blobs",
       "repository":  "vendor_lenovo_kunlun2",
       "target_path": "vendor/lenovo/kunlun2",
-      "branch": "eleven",
+      "branch": "eleven"
    }
 ]
