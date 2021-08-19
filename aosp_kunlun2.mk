@@ -27,6 +27,6 @@ PRODUCT_NAME := aosp_kunlun2
 PRODUCT_BRAND := lenovo
 PRODUCT_DEVICE := kunlun2
 PRODUCT_MANUFACTURER := lenovo
-PRODUCT_MODEL := Lenovo K10 Note
+PRODUCT_MODEL := Lenovo Z6 Lite
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
