@@ -2,7 +2,7 @@
    {
       "repository": "device_lenovo_sdm710-common",
       "target_path": "device/lenovo/sdm710-common",
-      "branch": "thirteen"
+      "branch": "thirteen-wip"
    },
    {
       "remote": "pixel-devices-blobs",
