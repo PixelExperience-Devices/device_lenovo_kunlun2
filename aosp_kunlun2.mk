@@ -18,6 +18,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Pixel Experience targets
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_USES_AOSP_RECOVERY := true
 
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
